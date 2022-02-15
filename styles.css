@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #3E497A;
+    color: #fff;
+}
+
+hr{
+    color: #398AB9;
+    border: none;
+    border-bottom: 3px solid;
+    width: 140px;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    margin: 0 30px;
+}
+
+.photos{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    height: 0;              /*container hide */
+    overflow: hidden;      /*container hide */
+}
+
+h1{
+    margin: 50px auto 30px;
+    text-align: center;
+}
+
+.dash{
+    margin: 0 auto 30px;
+}
+
+.name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.info{
+    width:630px;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+img:hover{
+    filter: none;
+}
+
+.container:target{
+    height: auto;       /*container visible when click on photo */
+}
+
+@media (max-width:768px){
+    .photos{
+        flex-direction: column;
+    }
+    img{
+        margin: 10px;
+    }
+    .info{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
